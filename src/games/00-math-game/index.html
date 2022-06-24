@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d34dbf6a16.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Math Game</title>
+  </head>
+  <body>
+    <main>
+      <img src="./img/board.jpg" alt="" id="board-img" />
+      <div class="container">
+        <div id="score-box">
+          <div class="score">
+            <i class="fas fa-trophy"></i><span class="score-value">0</span>
+          </div>
+          <div class="correct"><i class="fas fa-check"></i>Correct</div>
+          <div class="wrong"><i class="fas fa-times"></i>Wrong</div>
+        </div>
+        <div class="question"></div>
+        <div class="instruction">Click on the right answer</div>
+        <div class="choices">
+          <div class="box1 box"></div>
+          <div class="box2 box"></div>
+          <div class="box3 box"></div>
+          <div class="box4 box"></div>
+        </div>
+        <div>
+          <div class="counter-box">
+            <div class="start-reset">
+              <i class="fas fa-pencil-alt"></i>
+              Start Game
+            </div>
+            <div class="time-remaining">
+              <i class="fas fa-clock"></i>
+              <span class="time-remaining-value">60</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-over">
+          <p>Game Over</p>
+          <p>Score: <span class="final-score">0</span></p>
+        </div>
+      </div>
+    </main>
+    <script src="./src/app.js"></script>
+  </body>
+</html>
