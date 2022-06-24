@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(90deg, #3db48a, #52b2bf);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.container {
+  padding: 50px 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#board-img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#score-box {
+  display: flex;
+  height: 180px;
+  width: auto;
+}
+
+.score,
+.correct,
+.wrong {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.score {
+  position: absolute;
+  right: 7%;
+  color: white;
+}
+
+.score .fa-trophy {
+  color: #f1ff92;
+  margin-right: 10px;
+}
+
+.correct {
+  color: white;
+  display: none;
+}
+
+.correct .fa-check {
+  color: #42e252;
+  margin-right: 10px;
+}
+
+.wrong {
+  color: white;
+  display: none;
+}
+
+.wrong .fa-times {
+  color: #de401a;
+  margin-right: 10px;
+}
+
+.question {
+  font-size: 8rem;
+  text-align: center;
+  font-family: 'Birthstone', cursive;
+  color: white;
+  height: 200px;
+  width: auto;
+}
+
+.instruction {
+  font-size: 1.9rem;
+  text-align: center;
+  font-family: 'Birthstone', cursive;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.choices {
+  width: 300px;
+  height: 100px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  font-family: 'Shadows Into Light', cursive;
+  width: 70px;
+  height: 70px;
+  background: url('../img/paper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: center;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.7rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.box:hover {
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+.box:active {
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+.counter-box {
+  display: flex;
+  margin: 20px 0;
+}
+
+.start-reset {
+  background-color: #ece7e0;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 195px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  touch-action: manipulation;
+  margin-bottom: 30px;
+}
+
+.start-reset:focus {
+  outline: 0;
+}
+
+.start-reset:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.start-reset:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+.start-reset .fa-pencil-alt {
+  color: #024729;
+  margin-right: 10px;
+}
+
+.start-reset .fa-eraser {
+  color: #c96c5a;
+  margin-right: 10px;
+}
+
+.time-remaining {
+  position: absolute;
+  right: 6%;
+  bottom: 9%;
+  visibility: visible;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.time-remaining .fa-clock {
+  color: #f65959;
+  margin-right: 5px;
+}
+
+.game-over {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  border-radius: 3px;
+  height: 190px;
+  width: 300px;
+  background-image: url('../img/smashed.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fc3737;
+  font-size: 2.3em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 100px;
+  z-index: 2;
+  display: none;
+  position: absolute;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.final-score {
+  color: #2eaa3a;
+}
+
+@media (min-width: 768px) {
+  main {
+    height: 560px;
+    width: 800px;
+  }
+
+  .question {
+    font-size: 9rem;
+    height: 240px;
+  }
+
+  .instruction {
+    font-size: 2rem;
+  }
+
+  .choices {
+    width: 400px;
+  }
+
+  .box {
+    width: 95px;
+    height: 95px;
+    font-size: 2.1rem;
+  }
+
+  .start-reset {
+    width: 220px;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+  }
+
+  .game-over {
+    width: 450px;
+  }
+}
