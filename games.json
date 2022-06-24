@@ -1,0 +1,13 @@
+{
+  "games": [
+    {
+      "id": 0,
+      "img": "./src/assets/img/00-math-game.png",
+      "name": "Math Game",
+      "desc": "Solve math multiplication and test your speed on the timer with this educational game",
+      "tools": "html, css, js",
+      "cat": "educational",
+      "url": "./src/games/00-math-game/index.html"
+    }
+  ]
+}
