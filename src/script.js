@@ -15,10 +15,10 @@ const generateGrid = async () => {
   const games = await fetchData();
 
   let output = '';
-  
+
   const mapGames = games.map((game) => {
     output += `
-    <div class="card">
+    <div id="${game.id}" class="card">
           <div class="card-image">
             <a href="${game.url}" target="_blank"
               ><img src="${game.img}" alt="${game.name}"
