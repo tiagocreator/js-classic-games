@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://kit.fontawesome.com/d34dbf6a16.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <title>Fruit Ninja | JavaScript</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div id="score-box">
+          <div class="score">
+            <i class="fas fa-trophy"></i><span class="score-value">0</span>
+          </div>
+        </div>
+        <div class="fruit-container">
+          <img src="./img/fruit-ninja.png" class="fruit-ninja-img">
+          <img class="fruit fruit1" />
+          <div class="game-over">
+            <p class="game-over-text">Game Over!</p>
+            <p>Score<img src="./img/score.png" class="score-img"><span class="final-score">0</span></p>
+          </div>
+        </div>
+        <div>
+          <div class="counter-box">
+            <div class="start-reset">
+              <i class="far fa-play-circle"></i>
+            </div>
+            <div class="lifes-remaining">
+              <img src="./img/ninja.png" class="ninja-img">
+              <div class="lifes-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <audio class="sword-cut-mp3">
+      <source src="./audio/sword-cut.mp3"></source>
+    </audio>
+    <script src="./src/game.js"></script>
+  </body>
+</html>
