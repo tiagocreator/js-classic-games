@@ -17,6 +17,15 @@
       "tools": "html, css, js",
       "cat": "puzzle",
       "url": "./src/games/01-2048/index.html"
+    },
+    {
+      "id": 2,
+      "img": "./src/assets/img/02-fruit-ninja.png",
+      "name": "Fruit Ninja",
+      "desc": "Attack the fruits and see how many points you get in this very addictive action game.",
+      "tools": "html, css, jquery",
+      "cat": "arcade",
+      "url": "./src/games/02-fruit-ninja/index.html"
     }
   ]
 }
