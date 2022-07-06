@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <title>Minesweeper</title>
+  </head>
+  <body>
+    <main>
+      <div class="display">
+        <div class="num-display flags-remaining">000</div>
+        <div class="reload">
+          <img src="./img/reload.png" alt="" class="reload-btn" />
+        </div>
+        <div class="num-display time-spent">000</div>
+      </div>
+      <div class="game">
+        <div class="grid">
+          <button class="play-btn">
+            <img src="./img/play.png" alt="" class="play-img" />PLAY
+          </button>
+        </div>
+      </div>
+    </main>
+    <audio src="./sound/click.wav" class="click-audio"></audio>
+    <audio src="./sound/flag.wav" class="flag-audio"></audio>
+    <audio src="./sound/explosion.wav" class="explosion-audio"></audio>
+    <audio src="./sound/play.wav" class="play-audio"></audio>
+    <audio src="./sound/reload.wav" class="reload-audio"></audio>
+    <div class="result"></div>
+    <script src="./src/game.js"></script>
+  </body>
+</html>
