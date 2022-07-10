@@ -26,6 +26,15 @@
       "tools": "html, css, jquery",
       "cat": "arcade",
       "url": "./src/games/02-fruit-ninja/index.html"
+    },
+    {
+      "id": 3,
+      "img": "./src/assets/img/03-minesweeper.png",
+      "name": "Minesweeper",
+      "desc": "Find and disable all the mines present in this classic game popularized by MS Windows.",
+      "tools": "html, css, js",
+      "cat": "puzzle",
+      "url": "./src/games/03-minesweeper/index.html"
     }
   ]
 }
