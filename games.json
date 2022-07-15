@@ -35,6 +35,15 @@
       "tools": "html, css, js",
       "cat": "puzzle",
       "url": "./src/games/03-minesweeper/index.html"
+    },
+    {
+      "id": 4,
+      "img": "./src/assets/img/04-hangman.png",
+      "name": "Hangman",
+      "desc": "Guess the word using the number of characters as a hint",
+      "tools": "html, css, js",
+      "cat": "puzzle",
+      "url": "./src/games/04-hangman/index.html"
     }
   ]
 }
