@@ -1,7 +1,7 @@
 const fetchData = async () => {
   const data = await fetch('../games.json');
   const res = await data.json();
-  return res.games;
+  return res.games.reverse();
 };
 
 const countGames = async () => {
