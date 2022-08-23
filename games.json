@@ -2,7 +2,7 @@
   "games": [
     {
       "id": 0,
-      "img": "./src/assets/img/00-math-game.png",
+      "img": "./src/assets/img/00-math-game.webp",
       "name": "Math Game",
       "desc": "Solve math multiplication and test your speed on the timer with this educational game",
       "tools": "html, css, js",
@@ -11,7 +11,7 @@
     },
     {
       "id": 1,
-      "img": "./src/assets/img/01-2048.png",
+      "img": "./src/assets/img/01-2048.webp",
       "name": "2048",
       "desc": "Simple puzzle game where you merge tiles with equal numbers. The goal is to form the number 2048.",
       "tools": "html, css, js",
@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "img": "./src/assets/img/02-fruit-ninja.png",
+      "img": "./src/assets/img/02-fruit-ninja.webp",
       "name": "Fruit Ninja",
       "desc": "Attack the fruits and see how many points you get in this very addictive action game.",
       "tools": "html, css, jquery",
@@ -29,7 +29,7 @@
     },
     {
       "id": 3,
-      "img": "./src/assets/img/03-minesweeper.png",
+      "img": "./src/assets/img/03-minesweeper.webp",
       "name": "Minesweeper",
       "desc": "Find and disable all the mines present in this classic game popularized by MS Windows.",
       "tools": "html, css, js",
@@ -38,7 +38,7 @@
     },
     {
       "id": 4,
-      "img": "./src/assets/img/04-hangman.png",
+      "img": "./src/assets/img/04-hangman.webp",
       "name": "Hangman",
       "desc": "Guess the word using the number of characters as a hint",
       "tools": "html, css, js",
