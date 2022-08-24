@@ -44,6 +44,15 @@
       "tools": "html, css, js",
       "cat": "puzzle",
       "url": "./src/games/04-hangman/index.html"
+    },
+    {
+      "id": 5,
+      "img": "./src/assets/img/05-doodle-jump.png",
+      "name": "Doodle Jump",
+      "desc": "Platform game where the objective is to get as high as possible and accumulate points.",
+      "tools": "html, css, js",
+      "cat": "arcade",
+      "url": "./src/games/05-doodle-jump/index.html"
     }
   ]
 }
