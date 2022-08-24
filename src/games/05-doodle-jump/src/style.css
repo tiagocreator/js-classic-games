@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Patrick Hand', cursive;
+  user-select: none;
+  background: #fbfbfc;
+}
+
+.grid {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  background: url('../img/background.png');
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.doodler {
+  width: 87px;
+  height: 85px;
+  background: url('../img/doodler.png');
+  position: absolute;
+}
+
+.platform {
+  width: 85px;
+  height: 15px;
+  background: url('../img/platform.png');
+  position: absolute;
+}
+
+/* Presentation */
+
+.presentation {
+  width: 100%;
+  position: absolute;
+  margin-top: 60px;
+  z-index: 2;
+}
+
+.presentation h1 {
+  color: #b9020a;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+
+.presentation h2 {
+  letter-spacing: 1px;
+  margin: 25px 0;
+}
+
+.presentation h2 .fas {
+  margin: 0 10px;
+}
+
+.presentation h2 .fa-arrow-left {
+  color: #ffb900;
+}
+
+.presentation h2 .fa-arrow-up {
+  color: #1bc613;
+}
+
+.presentation h2 .fa-arrow-right {
+  color: #00b7cf;
+}
+
+.button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 40px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 18px 35px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button-:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* Game Over */
+
+.game-over {
+  padding-top: 60px;
+  letter-spacing: 3px;
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('../img/background.png');
+  z-index: 2;
+}
+
+.game-over h1 {
+  color: #a03e82;
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+}
+
+.game-over .fa-trophy {
+  color: #e0d832;
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+}
+
+.game-over .score {
+  font-size: 3.3rem;
+  margin-bottom: 20px;
+}
+
+/* Touch Areas */
+
+.touch-container {
+  display: flex;
+  width: 400px;
+  height: 600px;
+  position: fixed;
+  z-index: 1;
+}
+
+.touch-left {
+  flex: 1.15;
+  height: 100%;
+}
+
+.touch-middle {
+  flex: 2;
+  height: 100%;
+}
+
+.touch-right {
+  flex: 1.15;
+  height: 100%;
+}
