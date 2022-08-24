@@ -47,7 +47,7 @@
     },
     {
       "id": 5,
-      "img": "./src/assets/img/05-doodle-jump.png",
+      "img": "./src/assets/img/05-doodle-jump.webp",
       "name": "Doodle Jump",
       "desc": "Platform game where the objective is to get as high as possible and accumulate points.",
       "tools": "html, css, js",
